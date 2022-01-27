@@ -1,0 +1,81 @@
+* {
+	box-sizing: border-box;
+}
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "Lobster", cursive;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: radial-gradient(
+		circle farthest-corner at 10% 20%,
+		rgba(90, 92, 106, 1) 0%,
+		rgba(32, 45, 58, 1) 81.3%
+	);
+	color: #f1f1f1b5;
+}
+
+.clock {
+	margin: 0;
+	font-size: 3.5rem;
+	padding: 1rem;
+}
+.clock span {
+	display: inline-block;
+	text-align: center;
+	line-height: 6.25rem;
+	letter-spacing: 0.25rem;
+	width: 6.25rem;
+	height: 6.25rem;
+	background-image: radial-gradient(
+		circle farthest-corner at 10% 20%,
+		rgba(90, 92, 106, 1) 0%,
+		rgba(32, 45, 58, 1) 81.3%
+	);
+	border-radius: 1rem;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.clock span:nth-child(2) {
+	margin: 0 1rem;
+}
+.clock span:first-child {
+	margin-right: 1rem;
+}
+.clock span:last-child {
+	margin-left: 1rem;
+}
+
+@media screen and (max-width: 430px) {
+	.clock {
+		font-size: 3rem;
+	}
+	.clock span {
+		line-height: 5.25rem;
+		width: 5.25rem;
+		height: 5.25rem;
+	}
+}
+@media screen and (max-width: 375px) {
+	.clock {
+		font-size: 2.25rem;
+	}
+	.clock span {
+		line-height: 4.25rem;
+		width: 4.25rem;
+		height: 4.25rem;
+	}
+	.clock span:nth-child(2) {
+		margin: 0 0.7rem;
+	}
+	.clock span:first-child {
+		margin-right: 0.7rem;
+	}
+	.clock span:last-child {
+		margin-left: 0.7rem;
+	}
+}
